@@ -1,2 +1,2 @@
 # Rmalnutrition
-> Supplementary files for the research article of WAN-net.
+> Supplementary files for the research article of WAL-net.
