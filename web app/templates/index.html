@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <style>
+      body {
+        padding: 2em;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(25deg, #205073 0%, #72d6f5 100%);
+      }
+
+      h1, h3 {
+        color: #262730;
+        margin-bottom: 1em;
+      }
+
+      .segment {
+        border-radius: 0.5em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 2em;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      form {
+        margin-top: 2em;
+      }
+
+      label {
+        color: #262730;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5em;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 0.3em;
+        border: 1px solid #ccc;
+      }
+
+      button[type="submit"] {
+        background-color: #262730;
+        color: #fff;
+        padding: 0.5em 1em;
+        border-radius: 0.3em;
+        border: none;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #40445e;
+      }
+
+      h4 {
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="segment">
+        <h1>WAL-net for Prediction of Reversible Malnutrition</h1>
+        <h3><a href="https://github.com/kevinlyy/rmalnutrition">Click here to check our Github repository for more information</a></h3>
+        <h5>Version 1.0.0 by Liangyu Yin (E-mail: liangyuyin1988@tmmu.edu.cn, liangyuyin1988@qq.com)</h5>
+        <h5><i>Abbreviations: BMI, body mass index; ASMI, appendicular skeletal muscle mass index</i></h5>
+        <form action="{{ url_for('predict') }}" method="post">
+          <div class="input">
+            <label>BMI six months ago, kg/m<sup>2</sup></label>
+            <input type="text" name="bmi1" placeholder="bmi1" required="required" />
+          </div>
+          <div class="input">
+            <label>BMI one month ago, kg/m<sup>2</sup></label>
+            <input type="text" name="bmi2" placeholder="bmi2" required="required" />
+          </div>
+          <div class="input">
+            <label>BMI at baseline, kg/m<sup>2</sup></label>
+            <input type="text" name="bmi3" placeholder="bmi3" required="required" />
+          </div>
+          <div class="input">
+            <label>ASMI six months ago, kg/m<sup>2</sup></label>
+            <input type="text" name="asmi1" placeholder="asmi1" required="required" />
+          </div>
+          <div class="input">
+            <label>ASMI one month ago, kg/m<sup>2</sup></label>
+            <input type="text" name="asmi2" placeholder="asmi2" required="required" />
+          </div>
+          <div class="input">
+            <label>ASMI at baseline, kg/m<sup>2</sup></label>
+            <input type="text" name="asmi3" placeholder="asmi3" required="required" />
+          </div>
+          <button type="submit">Predict</button>
+        </form>
+        {% if prediction_text %}
+        <h4>{{ prediction_text }}</h4>
+        <h4>{{ prediction_text2 }}</h4>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

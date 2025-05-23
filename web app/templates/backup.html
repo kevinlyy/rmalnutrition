@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+</head>
+<body>
+ <div class="login">
+    <h1><font face="Arial">WAL-net to Predict Reversible Malnurition in Patients with Cancer</font></h1>
+    <h3><font face="Arial">Version 1.0.0 by Liangyu Yin</font></h3>
+    <h3><font face="Arial"><a href = "https://github.com/kevinlyy/rcachexia"> Click the link to check our Github repository for more information. </a></font></h3>
+    <form action="{{ url_for('predict')}}"method="post">  <!-- 这一块是用户输入自定义数据 -->
+        <input type="text" name="bmi1" placeholder="BMI six months ago" required="required"/>
+        <input type="text" name="bmi2" placeholder="BMI one month ago" required="required" />
+        <input type="text" name="bmi3" placeholder="BMI at baseline" required="required"/>
+        <input type="text" name="asmi1" placeholder="ASMI six months ago" required="required"/>
+        <input type="text" name="asmi2" placeholder="ASMI one month ago" required="required"/>
+        <input type="text" name="asmi3" placeholder="ASMI at baseline" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <font face="Arial">{{ prediction_text }}</font>  <!-- 这一块是模型输出结果 -->
+ </div>
+</body>
+</html>

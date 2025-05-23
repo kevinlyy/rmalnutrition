@@ -1,0 +1,102 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5000/
+Subject: ML API
+Date: Tue, 24 Oct 2023 03:58:50 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--lkQn9gwltyCr6936g4Gn7NphCpr5IRvAWF7De4w8E2----"
+
+
+------MultipartBoundary--lkQn9gwltyCr6936g4Gn7NphCpr5IRvAWF7De4w8E2----
+Content-Type: text/html
+Content-ID: <frame-75BE7116E37AD5FB678012240E614311@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5000/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-c68b4773-e21b-4a56-a18c-f748ce96e0ec@mhtml.blink" />
+
+<title>ML API</title>
+
+</head>
+<body>
+<div class=3D"container">
+<div class=3D"segment">
+<h1>WAL-net for Prediction of Reversible Malnutrition</h1>
+<h3><a href=3D"https://github.com/kevinlyy/rmalnutrition">Click here to che=
+ck our Github repository for more information</a></h3>
+<h5>Version 1.0.0 by Liangyu Yin (E-mail: liangyuyin1988@tmmu.edu.cn, liang=
+yuyin1988@qq.com)</h5>
+<h5><i>Abbreviations: BMI, body mass index; ASMI, appendicular skeletal mus=
+cle mass index</i></h5>
+<form action=3D"http://127.0.0.1:5000/predict" method=3D"post">
+<div class=3D"input">
+<label>BMI six months ago, kg/m<sup>2</sup></label>
+<input type=3D"text" name=3D"bmi1" placeholder=3D"bmi1" required=3D"require=
+d">
+</div>
+<div class=3D"input">
+<label>BMI one month ago, kg/m<sup>2</sup></label>
+<input type=3D"text" name=3D"bmi2" placeholder=3D"bmi2" required=3D"require=
+d">
+</div>
+<div class=3D"input">
+<label>BMI at baseline, kg/m<sup>2</sup></label>
+<input type=3D"text" name=3D"bmi3" placeholder=3D"bmi3" required=3D"require=
+d">
+</div>
+<div class=3D"input">
+<label>ASMI six months ago, kg/m<sup>2</sup></label>
+<input type=3D"text" name=3D"asmi1" placeholder=3D"asmi1" required=3D"requi=
+red">
+</div>
+<div class=3D"input">
+<label>ASMI one month ago, kg/m<sup>2</sup></label>
+<input type=3D"text" name=3D"asmi2" placeholder=3D"asmi2" required=3D"requi=
+red">
+</div>
+<div class=3D"input">
+<label>ASMI at baseline, kg/m<sup>2</sup></label>
+<input type=3D"text" name=3D"asmi3" placeholder=3D"asmi3" required=3D"requi=
+red">
+</div>
+<button type=3D"submit">Predict</button>
+</form>
+
+</div>
+</div>
+
+</body></html>
+------MultipartBoundary--lkQn9gwltyCr6936g4Gn7NphCpr5IRvAWF7De4w8E2----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-c68b4773-e21b-4a56-a18c-f748ce96e0ec@mhtml.blink
+
+@charset "utf-8";
+
+body { padding: 2em; font-family: Arial, sans-serif; background: linear-gra=
+dient(25deg, rgb(32, 80, 115) 0%, rgb(114, 214, 245) 100%); }
+
+h1, h3 { color: rgb(38, 39, 48); margin-bottom: 1em; }
+
+.segment { border-radius: 0.5em; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10p=
+x; padding: 2em; background: rgba(255, 255, 255, 0.9); }
+
+form { margin-top: 2em; }
+
+label { color: rgb(38, 39, 48); font-weight: bold; display: block; margin-b=
+ottom: 0.5em; }
+
+input[type=3D"text"] { width: 100%; padding: 0.5em; border-radius: 0.3em; b=
+order: 1px solid rgb(204, 204, 204); }
+
+button[type=3D"submit"] { background-color: rgb(38, 39, 48); color: rgb(255=
+, 255, 255); padding: 0.5em 1em; border-radius: 0.3em; border: none; cursor=
+: pointer; }
+
+button[type=3D"submit"]:hover { background-color: rgb(64, 68, 94); }
+
+h4 { margin-top: 2em; }
+------MultipartBoundary--lkQn9gwltyCr6936g4Gn7NphCpr5IRvAWF7De4w8E2------
